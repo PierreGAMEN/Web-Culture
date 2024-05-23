@@ -1,0 +1,41 @@
+#root {
+
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  height: 50%;
+  width: 90%;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.button-start {
+  width: 60%;
+}
+
+.button-answer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+section {
+  width: 90%;
+}
