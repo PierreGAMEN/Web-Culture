@@ -691,6 +691,331 @@ const data = [
                     question: "Qu'est-ce que le modèle de flux de travail Git 'Gitflow' et comment est-il utilisé dans le développement logiciel ?",
                     answer: "Gitflow est un modèle de flux de travail pour Git qui définit une structure de branches spécifique et des règles pour la gestion des versions dans un projet. Il utilise des branches principales comme 'master' et 'develop', ainsi que des branches de fonctionnalités, de versions et de correctifs, pour organiser le processus de développement de manière efficace et cohérente.",
                     theme: "Versionnage"
+                  },
+                  {
+                    question: "Qu'est-ce qu'une architecture monolithique dans le développement logiciel ?",
+                    answer: "Une architecture monolithique est un modèle où toutes les fonctionnalités et composants d'une application sont regroupés en une seule et unique base de code déployée en tant qu'unité indivisible.",
+                    theme: "Architecture Monolithique"
+                  },
+                  {
+                    question: "Quels sont les avantages et les inconvénients de l'architecture monolithique ?",
+                    answer: "Avantages : simplicité de développement et de déploiement, bonne performance pour les petites applications. Inconvénients : difficile à maintenir et à évoluer, déploiement plus long, impact des changements sur l'ensemble de l'application.",
+                    theme: "Architecture Monolithique"
+                  },
+                  {
+                    question: "Qu'est-ce qu'une architecture RESTful et en quoi est-elle différente des autres architectures web ?",
+                    answer: "Une architecture RESTful est une architecture d'API qui suit les principes de REST (Representational State Transfer), où les ressources sont identifiées par des URL et manipulées à l'aide de méthodes HTTP standard comme GET, POST, PUT, et DELETE.",
+                    theme: "Architecture RESTful"
+                  },
+                  {
+                    question: "Quels sont les principes de base de l'architecture REST ?",
+                    answer: "Les principes de base de REST incluent la statelessness (absence d'état), l'utilisation d'URL pour identifier les ressources, l'utilisation de méthodes HTTP pour les opérations CRUD, et le transfert de représentations de ressources en JSON ou XML.",
+                    theme: "Architecture RESTful"
+                  },
+                  {
+                    question: "Qu'est-ce qu'une architecture de microservices et comment se compare-t-elle à l'architecture monolithique ?",
+                    answer: "Une architecture de microservices divise une application en services indépendants qui peuvent être développés, déployés et mis à l'échelle séparément. Contrairement à l'architecture monolithique, elle permet une plus grande flexibilité et maintenabilité, mais introduit une complexité accrue dans la gestion des communications entre services.",
+                    theme: "Architecture Microservices"
+                  },
+                  {
+                    question: "Quels sont les principaux défis associés à l'architecture de microservices ?",
+                    answer: "Les principaux défis incluent la gestion de la communication inter-services, la gestion des transactions distribuées, la surveillance et le débogage des services, ainsi que la gestion de la configuration et du déploiement.",
+                    theme: "Architecture Microservices"
+                  },
+                  {
+                    question: "Qu'est-ce qu'une architecture orientée services (SOA) et comment se différencie-t-elle de l'architecture de microservices ?",
+                    answer: "L'architecture orientée services (SOA) est un modèle de conception où les services sont fournis aux autres composants par des interfaces de communication bien définies. Bien que similaire aux microservices, SOA tend à utiliser des services plus gros et moins nombreux, souvent avec un bus de services d'entreprise (ESB) pour l'orchestration.",
+                    theme: "Architecture SOA"
+                  },
+                  {
+                    question: "Qu'est-ce qu'une architecture en couches et quels sont ses avantages ?",
+                    answer: "Une architecture en couches organise une application en couches distinctes telles que la couche présentation, la couche logique métier, et la couche accès aux données. Cela permet une séparation des préoccupations, facilitant la maintenance et la testabilité de l'application.",
+                    theme: "Architecture en Couches"
+                  },
+                  {
+                    question: "Qu'est-ce que l'architecture Serverless et comment fonctionne-t-elle ?",
+                    answer: "L'architecture Serverless permet aux développeurs de déployer des fonctions ou des services sans gérer les serveurs sous-jacents. Les fournisseurs de cloud, comme AWS Lambda, exécutent le code en réponse à des événements et facturent uniquement pour le temps d'exécution.",
+                    theme: "Architecture Serverless"
+                  },
+                  {
+                    question: "Quels sont les avantages et les inconvénients de l'architecture Serverless ?",
+                    answer: "Avantages : réduction des coûts d'infrastructure, mise à l'échelle automatique, gestion simplifiée des serveurs. Inconvénients : dépendance vis-à-vis du fournisseur de cloud, défis de latence et de performance, complexité de la gestion des états.",
+                    theme: "Architecture Serverless"
+                  },
+                  {
+                    question: "Qu'est-ce que le référencement naturel (SEO) ?",
+                    answer: "Le référencement naturel (SEO) est l'ensemble des techniques visant à améliorer la visibilité d'un site web dans les résultats des moteurs de recherche de manière organique, c'est-à-dire sans payer pour des annonces publicitaires.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Quels sont les principaux facteurs de classement de Google pour le référencement naturel ?",
+                    answer: "Les principaux facteurs incluent la qualité du contenu, les backlinks, la pertinence des mots-clés, la vitesse de chargement du site, l'optimisation mobile, et l'expérience utilisateur.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Quelle est l'importance des mots-clés dans le référencement naturel ?",
+                    answer: "Les mots-clés sont essentiels car ils aident les moteurs de recherche à comprendre le sujet de vos pages. Une bonne recherche de mots-clés permet de cibler des termes pertinents et de générer du trafic qualifié.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Qu'est-ce qu'un backlink et pourquoi est-il important pour le SEO ?",
+                    answer: "Un backlink est un lien entrant provenant d'un autre site web vers votre site. Les backlinks sont importants car ils sont considérés comme des votes de confiance par les moteurs de recherche, augmentant ainsi l'autorité et la crédibilité de votre site.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Comment la vitesse de chargement d'un site affecte-t-elle son référencement ?",
+                    answer: "La vitesse de chargement d'un site affecte le SEO car les moteurs de recherche, comme Google, favorisent les sites rapides dans leurs classements. Un site rapide améliore également l'expérience utilisateur, réduisant le taux de rebond.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Qu'est-ce que l'optimisation mobile et pourquoi est-elle cruciale pour le SEO ?",
+                    answer: "L'optimisation mobile consiste à rendre un site web facilement accessible et navigable sur les appareils mobiles. Elle est cruciale car une grande partie du trafic web provient des mobiles et Google utilise l'indexation mobile-first, privilégiant les sites optimisés pour mobile.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Comment les balises méta influencent-elles le référencement ?",
+                    answer: "Les balises méta, comme la balise titre et la méta description, influencent le SEO en aidant les moteurs de recherche à comprendre le contenu de vos pages. Elles peuvent également améliorer le taux de clics lorsqu'elles sont bien rédigées.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Qu'est-ce que le contenu duplicata et comment affecte-t-il le SEO ?",
+                    answer: "Le contenu duplicata est du contenu identique ou très similaire sur plusieurs pages d'un même site ou de différents sites. Il peut nuire au SEO en créant de la confusion pour les moteurs de recherche et en diluant la valeur SEO de chaque page.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Pourquoi les balises alt des images sont-elles importantes pour le SEO ?",
+                    answer: "Les balises alt sont importantes car elles fournissent une description textuelle des images pour les moteurs de recherche et les lecteurs d'écran. Elles améliorent l'accessibilité et permettent aux moteurs de recherche d'indexer les images correctement.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Comment les réseaux sociaux influencent-ils le SEO ?",
+                    answer: "Les réseaux sociaux influencent indirectement le SEO en augmentant la visibilité et le partage de votre contenu, ce qui peut générer des backlinks et du trafic vers votre site. Une présence active sur les réseaux sociaux peut également renforcer votre marque.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Qu'est-ce que le fichier robots.txt et comment impacte-t-il le SEO ?",
+                    answer: "Le fichier robots.txt indique aux moteurs de recherche quelles pages ou sections d'un site ne doivent pas être explorées ou indexées. Une mauvaise configuration peut empêcher l'indexation de pages importantes, affectant négativement le SEO.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Comment les sitemaps XML contribuent-ils au SEO ?",
+                    answer: "Les sitemaps XML aident les moteurs de recherche à explorer et à indexer plus efficacement les pages de votre site en fournissant une liste structurée de vos URL. Ils peuvent inclure des informations sur la fréquence de mise à jour et l'importance des pages.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Qu'est-ce que le taux de rebond et pourquoi est-il important pour le SEO ?",
+                    answer: "Le taux de rebond est le pourcentage de visiteurs qui quittent votre site après avoir consulté une seule page. Un taux de rebond élevé peut indiquer une mauvaise expérience utilisateur ou un contenu non pertinent, ce qui peut nuire au SEO.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Comment les liens internes influencent-ils le SEO ?",
+                    answer: "Les liens internes aident les moteurs de recherche à découvrir et à indexer les pages de votre site. Ils améliorent également la navigation pour les utilisateurs, répartissent l'autorité SEO entre les pages et augmentent le temps passé sur le site.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Qu'est-ce que le SEO local et pourquoi est-il important ?",
+                    answer: "Le SEO local se concentre sur l'optimisation d'un site web pour apparaître dans les résultats de recherche locaux. Il est important pour les entreprises qui dépendent du trafic géographiquement ciblé et peut inclure des pratiques comme l'inscription à Google My Business.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Qu'est-ce que le SEO technique et quels sont ses principaux aspects ?",
+                    answer: "Le SEO technique concerne l'optimisation des aspects techniques d'un site pour améliorer son exploration et son indexation par les moteurs de recherche. Les principaux aspects incluent la vitesse de chargement, l'optimisation mobile, les balises HTML, et la structure des URL.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Pourquoi le contenu de qualité est-il essentiel pour le SEO ?",
+                    answer: "Le contenu de qualité est essentiel car il répond aux intentions de recherche des utilisateurs, attire des backlinks naturels et maintient les visiteurs sur votre site. Les moteurs de recherche privilégient les sites avec un contenu pertinent et bien structuré.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Qu'est-ce que le link building et comment contribue-t-il au SEO ?",
+                    answer: "Le link building est le processus d'acquisition de backlinks provenant d'autres sites web. Il contribue au SEO en augmentant l'autorité de votre site et en améliorant son classement dans les résultats de recherche.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Qu'est-ce qu'un audit SEO et pourquoi est-il nécessaire ?",
+                    answer: "Un audit SEO est une analyse approfondie de l'optimisation d'un site web pour les moteurs de recherche. Il est nécessaire pour identifier les problèmes techniques, les opportunités d'amélioration et pour élaborer une stratégie SEO efficace.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Comment les mises à jour d'algorithmes de Google affectent-elles le SEO ?",
+                    answer: "Les mises à jour d'algorithmes de Google peuvent affecter le SEO en modifiant les critères de classement des sites web. Il est important de suivre ces mises à jour pour ajuster les stratégies SEO et maintenir ou améliorer les classements dans les résultats de recherche.",
+                    theme: "SEO"
+                  },
+                  {
+                    question: "Qu'est-ce qu'Express.js et pourquoi est-il utilisé pour construire des serveurs ?",
+                    answer: "Express.js est un framework web minimaliste pour Node.js qui facilite la création et la gestion de serveurs web. Il est utilisé pour sa simplicité, sa flexibilité et ses nombreuses fonctionnalités intégrées, comme la gestion des routes et des middlewares.",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment installe-t-on Express.js dans un projet Node.js ?",
+                    answer: "Pour installer Express.js dans un projet Node.js, utilisez la commande npm : `npm install express`. Cela ajoutera Express à votre projet et mettra à jour le fichier `package.json`.",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment crée-t-on un serveur de base avec Express.js ?",
+                    answer: "Pour créer un serveur de base avec Express.js, importez Express, créez une instance d'application, définissez une route de base et démarrez le serveur avec `app.listen`. Par exemple : `const express = require('express'); const app = express(); app.get('/', (req, res) => res.send('Hello World')); app.listen(3000, () => console.log('Server running on port 3000'));`",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Qu'est-ce qu'un middleware dans Express.js et à quoi sert-il ?",
+                    answer: "Un middleware dans Express.js est une fonction qui a accès à l'objet requête (req), l'objet réponse (res) et la fonction suivante (next) dans le cycle de traitement des requêtes. Les middlewares sont utilisés pour exécuter du code, modifier les objets req et res, terminer le cycle de requête-réponse ou appeler la fonction suivante dans la pile.",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment définir une route GET dans Express.js ?",
+                    answer: "Pour définir une route GET dans Express.js, utilisez la méthode `app.get()`. Par exemple : `app.get('/route', (req, res) => { res.send('Response for GET request'); });`",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment définir une route POST dans Express.js ?",
+                    answer: "Pour définir une route POST dans Express.js, utilisez la méthode `app.post()`. Par exemple : `app.post('/route', (req, res) => { res.send('Response for POST request'); });`",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment gérer les erreurs dans un serveur Express.js ?",
+                    answer: "Pour gérer les erreurs dans Express.js, utilisez un middleware de gestion des erreurs. Par exemple : `app.use((err, req, res, next) => { console.error(err.stack); res.status(500).send('Something broke!'); });`",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment servir des fichiers statiques avec Express.js ?",
+                    answer: "Pour servir des fichiers statiques avec Express.js, utilisez le middleware `express.static`. Par exemple : `app.use(express.static('public'));` Cela permet de servir des fichiers comme HTML, CSS et JavaScript depuis le dossier 'public'.",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment analyser les données JSON dans les requêtes avec Express.js ?",
+                    answer: "Pour analyser les données JSON dans les requêtes, utilisez le middleware `express.json()`. Par exemple : `app.use(express.json());` Cela permet de traiter les données JSON envoyées dans le corps des requêtes.",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment définir des routes paramétrées dans Express.js ?",
+                    answer: "Pour définir des routes paramétrées dans Express.js, utilisez des segments de route précédés de `:`. Par exemple : `app.get('/user/:id', (req, res) => { res.send(`User ID: ${req.params.id}`); });`",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment utiliser les middlewares tiers dans Express.js ?",
+                    answer: "Pour utiliser des middlewares tiers dans Express.js, installez le middleware via npm et ajoutez-le à votre application avec `app.use()`. Par exemple, pour utiliser `morgan` pour la journalisation : `const morgan = require('morgan'); app.use(morgan('combined'));`",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment gérer les requêtes CORS dans Express.js ?",
+                    answer: "Pour gérer les requêtes CORS dans Express.js, utilisez le middleware `cors`. Installez-le avec npm : `npm install cors`, puis ajoutez-le à votre application : `const cors = require('cors'); app.use(cors());`",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment configurer les variables d'environnement dans une application Express.js ?",
+                    answer: "Pour configurer les variables d'environnement, utilisez un fichier `.env` et la bibliothèque `dotenv`. Installez `dotenv` : `npm install dotenv`, puis chargez les variables d'environnement au début de votre fichier principal : `require('dotenv').config();`",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment configurer le port d'écoute dans Express.js en utilisant les variables d'environnement ?",
+                    answer: "Pour configurer le port d'écoute, utilisez `process.env.PORT`. Par exemple : `const port = process.env.PORT || 3000; app.listen(port, () => console.log(`Server running on port ${port}`));`",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Comment structurer une application Express.js en utilisant des routeurs ?",
+                    answer: "Pour structurer une application avec des routeurs, créez des routeurs dans des fichiers séparés et utilisez `app.use()` pour les intégrer. Par exemple : `const userRouter = require('./routes/user'); app.use('/users', userRouter);` Dans `./routes/user.js` : `const express = require('express'); const router = express.Router(); router.get('/', (req, res) => { res.send('User list'); }); module.exports = router;`",
+                    theme: "Express.js"
+                  },
+                  {
+                    question: "Qu'est-ce que React et pourquoi est-il utilisé pour le développement web ?",
+                    answer: "React est une bibliothèque JavaScript pour la création d'interfaces utilisateur. Il est utilisé pour son approche déclarative, sa capacité à gérer des interfaces utilisateur dynamiques et sa performance grâce au Virtual DOM.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Qu'est-ce que le Virtual DOM et comment améliore-t-il les performances de React ?",
+                    answer: "Le Virtual DOM est une représentation en mémoire du DOM réel. Il permet à React de mettre à jour efficacement le DOM en calculant les différences entre le Virtual DOM et le DOM réel, puis en appliquant uniquement les modifications nécessaires.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Comment crée-t-on un composant fonctionnel dans React ?",
+                    answer: "Un composant fonctionnel dans React est une fonction JavaScript qui retourne du JSX. Par exemple : `function MyComponent() { return <div>Hello, World!</div>; }`",
+                    theme: "React"
+                  },
+                  {
+                    question: "Qu'est-ce que JSX et pourquoi est-il utilisé dans React ?",
+                    answer: "JSX est une extension de syntaxe pour JavaScript qui ressemble à HTML. Il est utilisé dans React pour décrire l'interface utilisateur de manière déclarative et permet d'intégrer du code JavaScript dans les balises HTML.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Quelle est la différence entre un composant fonctionnel et un composant de classe en React ?",
+                    answer: "Les composants fonctionnels sont des fonctions qui retournent du JSX, tandis que les composants de classe sont des classes ES6 qui étendent `React.Component` et incluent une méthode `render` qui retourne du JSX.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Comment gère-t-on l'état dans un composant fonctionnel en React ?",
+                    answer: "On gère l'état dans un composant fonctionnel en utilisant le Hook `useState`. Par exemple : `const [state, setState] = useState(initialState);`",
+                    theme: "React"
+                  },
+                  {
+                    question: "Qu'est-ce qu'un Hook dans React et pourquoi sont-ils utilisés ?",
+                    answer: "Les Hooks sont des fonctions qui permettent d'utiliser l'état et d'autres fonctionnalités de React dans des composants fonctionnels. Ils sont utilisés pour éviter les composants de classe et rendre le code plus lisible et maintenable.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Comment utilise-t-on le Hook `useEffect` et à quoi sert-il ?",
+                    answer: "Le Hook `useEffect` permet d'exécuter des effets de bord dans les composants fonctionnels, comme les appels API ou la mise à jour du DOM. Par exemple : `useEffect(() => { fetchData(); }, []);`",
+                    theme: "React"
+                  },
+                  {
+                    question: "Comment passe-t-on des données entre des composants en React ?",
+                    answer: "On passe des données entre des composants en utilisant les props. Les props sont des objets passés aux composants enfants depuis les composants parents. Par exemple : `<ChildComponent propName={propValue} />`",
+                    theme: "React"
+                  },
+                  {
+                    question: "Qu'est-ce que le contexte (Context) en React et comment l'utilise-t-on ?",
+                    answer: "Le contexte en React est une méthode pour passer des données à travers l'arborescence de composants sans avoir à passer des props manuellement à chaque niveau. On l'utilise en créant un contexte avec `React.createContext`, puis en utilisant `Provider` et `useContext`.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Comment gérer les événements dans React ?",
+                    answer: "On gère les événements dans React en utilisant des gestionnaires d'événements, similaires aux événements DOM. Par exemple : `<button onClick={handleClick}>Click me</button>`, où `handleClick` est une fonction définie dans le composant.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Qu'est-ce que le lifting state up en React et pourquoi est-il utilisé ?",
+                    answer: "Le lifting state up consiste à déplacer l'état partagé vers leur ancêtre commun le plus proche afin que les composants enfants puissent accéder à ces données via les props. Cela facilite la synchronisation de l'état entre plusieurs composants.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Comment peut-on optimiser les performances des composants React ?",
+                    answer: "On peut optimiser les performances des composants React en utilisant `React.memo` pour les composants fonctionnels, `shouldComponentUpdate` pour les composants de classe, le Hook `useMemo` pour la mémorisation des valeurs et `useCallback` pour la mémorisation des fonctions.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Comment fait-on pour router les différentes pages d'une application React ?",
+                    answer: "Pour router les pages d'une application React, on utilise une bibliothèque comme `react-router-dom`. On configure les routes avec le composant `Router` et on définit les routes avec `Route` et `Switch`.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Qu'est-ce que le rendu conditionnel en React et comment l'implémente-t-on ?",
+                    answer: "Le rendu conditionnel en React permet d'afficher ou de masquer des éléments en fonction de certaines conditions. On peut l'implémenter en utilisant des expressions conditionnelles JavaScript comme `if`, `&&`, et `ternary operator`.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Comment peut-on créer des composants réutilisables en React ?",
+                    answer: "On peut créer des composants réutilisables en concevant des composants modulaires et génériques qui acceptent des props pour leur personnalisation. Cela permet de les utiliser dans différents contextes avec des données variées.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Comment gère-t-on les formulaires en React ?",
+                    answer: "On gère les formulaires en React en utilisant l'état local pour suivre les valeurs des champs de formulaire, en associant les champs à des gestionnaires d'événements comme `onChange`, et en manipulant l'état pour contrôler le formulaire.",
+                    theme: "React"
+                  },
+                  {
+                    question: "Qu'est-ce que la méthode `setState` et comment l'utilise-t-on dans un composant de classe ?",
+                    answer: "La méthode `setState` est utilisée pour mettre à jour l'état d'un composant de classe. On l'appelle avec un objet contenant les nouvelles valeurs de l'état. Par exemple : `this.setState({ key: value });`",
+                    theme: "React"
+                  },
+                  {
+                    question: "Qu'est-ce que les 'refs' en React et comment les utilise-t-on ?",
+                    answer: "Les 'refs' en React permettent d'accéder directement aux éléments du DOM ou aux instances des composants. On les crée avec `React.createRef` et les attache à un élément via l'attribut `ref`. Par exemple : `const myRef = React.createRef(); <div ref={myRef}></div>`",
+                    theme: "React"
+                  },
+                  {
+                    question: "Qu'est-ce que l'hydratation en React ?",
+                    answer: "L'hydratation en React est le processus de prise en charge du HTML généré côté serveur et de l'attachement des gestionnaires d'événements à celui-ci. Elle est utilisée dans les applications de rendu côté serveur (SSR) pour améliorer les performances initiales.",
+                    theme: "React"
                   }
 
 
