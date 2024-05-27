@@ -62,12 +62,17 @@ function App() {
      <button className='button-start' onClick={getQuestion}>Nouvelle question</button>
      <p className='score'>Score : {score}/{nombreQuestion}</p>
       {question && (
-        <section>
-          <h2>{category ? `Thématique ${category}` : "Toutes les thématiques"}</h2>
-          <p>{question.question}</p>
-          <button onClick={() => setResponse(true)}>Voir la réponse</button>
-          {response && <div>
-            <p>{question.answer}</p>
+        <section className={response ? 'flip-scale-up-hor' : ''}>
+          {!response && <><h2 className={response ? 'flip-scale-up-hor' : ''}>{category ? `Thématique ${category}` : "Toutes thématiques"}</h2>
+          <p className={response ? 'flip-scale-up-hor question' : 'question'}>{question.question}</p>
+          <button className={response ? 'flip-scale-up-hor' : '' } onClick={() => setResponse(true)}>Voir la réponse</button></>}
+          {response && <p className={response ? 'flip-scale-up-hor' : ''}>{question.answer}</p>}
+        </section>
+        
+      )}
+
+        {response && <div>
+            
             <p>Aviez vous la bonne réponse ?</p>
             <div className='button-answer'>
               <button onClick={getScore}>OUI</button>
@@ -75,8 +80,6 @@ function App() {
             </div>
             
             </div>}
-        </section>
-      )}
       
     </div>
   );
